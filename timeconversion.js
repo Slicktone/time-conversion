@@ -24,8 +24,10 @@ function readLine() {
 
 
 function timeConversion(s) {
-     
-    
+    //split a string with ':'
+    let time = s.split(':');
+    //convert string into number
+    let hour = parseInt(time[0]);
 
 }
 
