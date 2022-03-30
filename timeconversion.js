@@ -33,6 +33,8 @@ function timeConversion(s) {
     //define second
     let sec = time[2].slice(0, 2)
 
+    //start special conditions
+
 }
 
 function main() {
