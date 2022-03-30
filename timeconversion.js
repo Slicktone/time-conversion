@@ -28,6 +28,10 @@ function timeConversion(s) {
     let time = s.split(':');
     //convert string into number
     let hour = parseInt(time[0]);
+    //define minute
+    let min = time[1];
+    //define second
+    let sec = time[2].slice(0, 2)
 
 }
 
