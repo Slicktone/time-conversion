@@ -33,12 +33,15 @@ function timeConversion(s) {
     //define second
     let sec = time[2].slice(0, 2)
     //format am/pm
-    let format = 
+    let format = time[2].slice(2);
 
     //start special conditions
     //if the format is PM then convert it to 24h
     //check if the hour is less than 12 because of the time between 12pm and 12:59 are the same in 24h
-    if (format === 'PM')
+    if (format === 'PM' && hour === 12) {
+        hour +=12;
+    }
+    
 
 }
 
