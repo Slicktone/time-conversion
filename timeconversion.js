@@ -41,7 +41,11 @@ function timeConversion(s) {
     if (format === 'PM' && hour === 12) {
         hour +=12;
     }
-    
+    //check for AM format
+    //if true then hour will be zero otherwise no change in AM
+    else if(format === 'AM' && hour === 12) {
+        hour = 0;
+    }
 
 }
 
