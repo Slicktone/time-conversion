@@ -22,11 +22,13 @@ function timeConversion(s) {
     else if(format === 'AM' && hour === 12) {
         hour = 0;
     }
-    //combine all 3 
-    let finaltime = `${
-        //be sure to prefix with a 0 for testing and AM times like '0200' or '0100'
-        hour < 10 ? '0' + hour : hour
-    }:`${min}:$`{sec}`
 
+    //special cases for hour
+    //be sure to prefix with a 0 for testing and AM times like '0200' or '0100'
+    hour = (hour < 10) ? ('0' + hour) : hour;
+
+    //combine all 3 
+    let finaltime = hour + ':' + min + ':' + sec;
+   
     return finaltime;
 }
